@@ -1,5 +1,5 @@
 from Funciones_cuenta.nuevo_usuario import IngresoDB, CreacionCuenta
-
+from Funciones_cuenta.depositar_retirar import IngresoDB, DepositarRetirar
 
 ruta_db = "C:/Users/POWER/cuentas_bancarias.db"
 conexion = IngresoDB(ruta_db)
@@ -19,7 +19,8 @@ while True:
             nueva_cuenta = CreacionCuenta(conexion)
             nueva_cuenta.nueva_cuenta()
         elif usuario == 2:
-            print("Funcionalidad proxima.")
+            depositar_retirar = DepositarRetirar(conexion)
+            depositar_retirar.ejecutar_opciones()
         elif usuario == 3:
             print("Funcionalidad proxima.")
         elif usuario == 4:
