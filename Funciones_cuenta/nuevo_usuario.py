@@ -51,8 +51,3 @@ ruta_db = "C:/Users/POWER/cuentas_bancarias.db"
 # CREAMOS UNA INSTANCIA DE CONEXIÓN A LA BASE DE DATOS
 conexion = IngresoDB(ruta_db)
 
-# Definimos la ruta de la base de datos
-ruta_db = "C:/Users/POWER/cuentas_bancarias.db"
-
-# Creamos una instancia de conexión a la base de datos
-conexion = IngresoDB(ruta_db)
